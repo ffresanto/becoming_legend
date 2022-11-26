@@ -540,3 +540,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+becominglegend_api/src/BecomingLegend.API/obj/staticwebassets.pack.sentinel
