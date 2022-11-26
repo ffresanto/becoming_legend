@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BecomingLegend.API.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BecomingLegend.API.Controllers
@@ -11,8 +12,8 @@ namespace BecomingLegend.API.Controllers
     public class AchievementController : ControllerBase
     {
         [HttpGet]
-        public string get(){
-            return "Hello World";
+        public Achievement get(){
+            return new Achievement();
         }
     }
 }
