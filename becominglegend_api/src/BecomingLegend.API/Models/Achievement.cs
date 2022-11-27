@@ -7,7 +7,6 @@ namespace BecomingLegend.API.Models
 {
     public class Achievement
     {
-
         public int Id { get; set; }
         public string Name { get; set; }
 
@@ -17,7 +16,6 @@ namespace BecomingLegend.API.Models
         {
             this.Id = id;
             this.Name = name;
-
         }
     }
 }
