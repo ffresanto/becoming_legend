@@ -47,17 +47,17 @@ namespace BecomingLegend.API.Controllers
             }
         }
 
-        [HttpPut("{id}")]
-        public Achievement Put(int id, Achievement achievement){
+        [HttpPut]
+        public Achievement Put(Achievement achievement){
 
-            if (achievement.Id != id ) throw new Exception(message.apiError);
+            // if (achievement.Id != id ) throw new Exception(message.apiError);
 
             _context.Update(achievement);
 
             if(_context.SaveChanges() > 0)
-                return _context.Achievements.FirstOrDefault(dados => dados.Id == id);
+                return _context.Achievements.FirstOrDefault(dados => dados.Id == achievement.Id);
             else
-                return new Achievement();
+                throw new Exception(message.apiError);
             
         }
 
