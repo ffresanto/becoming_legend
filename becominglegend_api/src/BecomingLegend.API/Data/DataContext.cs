@@ -11,5 +11,6 @@ namespace BecomingLegend.API.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public DbSet<Achievement> Achievements {get;set;}
+        public DbSet<Team> Teams {get;set;}
     }
 }
