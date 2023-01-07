@@ -53,7 +53,7 @@ namespace BecomingLegend.API.Controllers
             // if (achievement.Id != id ) throw new Exception(message.apiError);
 
             _context.Update(achievement);
-
+        
             if(_context.SaveChanges() > 0)
                 return _context.Achievements.FirstOrDefault(dados => dados.Id == achievement.Id);
             else
